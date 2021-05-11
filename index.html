@@ -379,15 +379,15 @@ alert("text");
 				<h2>Contáctanos</h2>
 				<p>Queremos saber tu opinión acerca de todo lo relacionado con el club</p>
 				<div class="newsletter_detail">
-					<form action="mailto:corporaciondeportivasinlimites@gmail.com" method="post" enctype="text/plain" id="newsletter-signup">
+					<form action="contact.php" method="post" enctype="text/plain" id="newsletter-signup">
 						<div class="col-md-6 col-sm-6">
-							<input name="name" type="text" class="form-control" id="name" placeholder="Nombre">
+							<input name="visitor_name" type="text" class="form-control" id="name" placeholder="Nombre">
 					  	</div>
 						<div class="col-md-6 col-sm-6">
-							<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+							<input name="visitor_email" type="email" class="form-control" id="email" placeholder="Email">
 					  	</div>
 						<div class="col-md-12 col-sm-12">
-							<textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+							<textarea class="form-control" name="visitor_message" rows="3" placeholder="Mensaje" required></textarea>
 						</div>
 						<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
 							<input type="submit" class="form-control" id="submit" value="ENVIAR">
@@ -399,6 +399,26 @@ alert("text");
 		</div>
 	</div>
 </section>
+
+<form action="MAILTO:sebasortiz2000@gmail.COM" method="post" enctype="text/plain">
+
+	<h3>Contact Form.</h3>
+	Name:<br>
+	<input type="text" name="name"
+	value="yourname" size="20">
+	<br>
+	Mail:<br>
+	<input type="text" name="mail"
+	value="yourmail" size="20">
+	<br>
+	Comment:<br>
+	<input type="text" name="comment"
+	value="yourcomment" size="40">
+	<br><br>
+	<input type="submit" value="Send">
+	<input type="reset" value="Reset">
+	
+	</form>
 
 <!--Section: Contact v.2-->
 <!-- <div class="container">
