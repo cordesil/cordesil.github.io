@@ -8,7 +8,9 @@
     
         function showText() {
             document.getElementById("demo").style.display = "block";
-            window.webkit.messageHandlers.jsHandler.postMessage(9 + 2);
+            if (window["webkit"] != undefined) {
+                window.webkit.messageHandlers.jsHandler.postMessage(5 + 2);
+            }
         }
     </script>
 </head>
