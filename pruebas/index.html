@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    button:active {
+      background-color: #8ebcf9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Test extern</p>
+
+  
+  <button type="button" id="descargaAndroidObject" onclick="getWithAndroidObject()">Descargar</button>
+
+
+</div>
+
+
+
+
+  <script>
+
+function getWithAndroidObject() {
+
+  window.App = "sdfs";
+  if (window.App != undefined) {
+                   alert("ios");
+                //  App.getBase64FromBlobData(reader.result)
+                  return 9
+                  //Si no, es que no estamos en webview y seguimos haciendo lo mismo que haciamos antes.
+                } else {
+                  alert("browser");
+                  return 8
+                }
+    }
+
+  </script>
+
+</body>
+
+</html>
