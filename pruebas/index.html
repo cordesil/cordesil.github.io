@@ -30,12 +30,12 @@ function getWithAndroidObject() {
 
   window.App = "sdfs";
   if (window.App != undefined) {
-                   alert("ios");
+                   document.write("ios");
                 //  App.getBase64FromBlobData(reader.result)
                   return 9
                   //Si no, es que no estamos en webview y seguimos haciendo lo mismo que haciamos antes.
                 } else {
-                  alert("browser");
+                  document.write("browser");
                   return 8
                 }
     }
