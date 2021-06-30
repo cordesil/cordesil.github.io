@@ -9,7 +9,7 @@
         function showText() {
             document.getElementById("demo").style.display = "block";
             if (window["webkit"] != undefined) {
-                window.webkit.messageHandlers.jsHandler.postMessage(5 + 2);
+                window["webkit"].messageHandlers.jsHandler.postMessage("String de prueba");           
             }
         }
     </script>
