@@ -1,47 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    button:active {
-      background-color: #8ebcf9;
-    }
-  </style>
+    <script>        
+        function hideText() {
+            document.getElementById("demo").style.display = "none";
+        }
+    
+        function showText() {
+            document.getElementById("demo").style.display = "block";
+            window.webkit.messageHandlers.jsHandler.postMessage(9 + 2);
+        }
+    </script>
 </head>
-
 <body>
-
-  <p>Test extern</p>
-
-  
-  <button type="button" id="descargaAndroidObject" onclick="getWithAndroidObject()">Descargar</button>
-
-
-</div>
-
-
-
-
-  <script>
-
-function getWithAndroidObject() {
-
-  window.App = "sdfs";
-  if (window.App != undefined) {
-                   document.write("ios");
-                //  App.getBase64FromBlobData(reader.result)
-                  return 9
-                  //Si no, es que no estamos en webview y seguimos haciendo lo mismo que haciamos antes.
-                } else {
-                  document.write("browser");
-                  return 8
-                }
-    }
-
-  </script>
-
+    <p id="demo">Hello World.</p>
+    <input type="button" onclick="showText()" value="Show Text and Trigger Handler">
+    <input type="button" onclick="hideText()" value="Hide Text">
 </body>
-
 </html>
